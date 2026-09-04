@@ -75,7 +75,7 @@
     </footer>
 
     <script>
-        const API_URL = 'https://oguiaraujo.pythonanywhere.com/api/historico/';
+        const API_URL = 'api/';
 
         function formatarDataHora(isoString) {
             if (!isoString) return 'Em aberto';
@@ -105,7 +105,7 @@
             divLoading.style.display = 'block';
 
             try {
-                const response = await fetch(`${API_URL}${token}/`);
+                const response = await fetch(`${API_URL}${token}.json`);
                 
                 if (response.status === 404) {
                     throw new Error('Histórico não encontrado. O link pode estar incorreto ou o acesso foi revogado.');
