@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Meu histórico — pOnto</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .badge-normal { background-color: #641542; }
+        .badge-pendencia { background-color: #e07b00; }
+
+        table { font-size: 0.85rem; }
+        th, td { text-align: center; vertical-align: middle; }
+        .badge { white-space: normal; line-height: 1.2; }
+        .badge-pendencia { display: inline-block; width: 78px; }   
+
+        @media (max-width: 576px) {
+            table { font-size: 0.75rem; }
+            th, td { padding: 0.4rem !important; }
+            .badge-pendencia { width: 62px; }
+        }
+
+        footer a { color: inherit; text-decoration: none; }
+        footer a:hover { color: #495057; }
+        
+        /* Loading e Erros */
+        #loading, #error-container { display: none; }
+        #content-container { display: none; }
+    </style>
+</head>
+<body class="bg-light">
+
+    <div class="container py-4 px-2">
+        <!-- Telas de Status -->
+        <div id="loading" class="text-center py-5">
+            <div class="spinner-border text-secondary" role="status">
+                <span class="visually-hidden">Carregando...</span>
+            </div>
+            <p class="mt-2 text-muted">Buscando histórico...</p>
+        </div>
+
+        <div id="error-container" class="text-center py-5">
+            <h5 class="text-danger">Erro ao carregar</h5>
+            <p id="error-message" class="text-muted">Não foi possível carregar o histórico.</p>
+        </div>
+
+        <!-- Conteúdo Principal -->
+        <div id="content-container">
+            <h4 id="bolsista-nome" class="text-center mb-1">...</h4>
+            <p class="text-center text-muted mb-4">Pendência atual: <strong id="bolsista-pendencia">...</strong></p>
+
+            <div class="card">
+                <div class="table-responsive">
+                    <table class="table table-sm mb-0 align-middle">
+                        <thead class="table-light">
+                            <tr>
+                                <th>Tipo</th>
+                                <th>Entrada</th>
+                                <th>Saída</th>
+                                <th>Trabalhado</th>
+                                <th>Diferença</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tabela-corpo">
+                            <!-- JS preenche aqui -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="text-center text-muted py-4 small">
+        <a href="https://github.com/eize-org/eize-ponto" target="_blank" rel="noopener">eize-org</a>
+    </footer>
+
+    <script>
+        const API_URL = 'https://oguiaraujo.pythonanywhere.com/api/historico/';
+
+        function formatarDataHora(isoString) {
+            if (!isoString) return 'Em aberto';
+            const data = new Date(isoString);
+            const dia = String(data.getDate()).padStart(2, '0');
+            const mes = String(data.getMonth() + 1).padStart(2, '0');
+            const hora = String(data.getHours()).padStart(2, '0');
+            const min = String(data.getMinutes()).padStart(2, '0');
+            return `${dia}/${mes} ${hora}:${min}`;
+        }
+
+        async function carregarHistorico() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const token = urlParams.get('token');
+
+            const divLoading = document.getElementById('loading');
+            const divError = document.getElementById('error-container');
+            const msgError = document.getElementById('error-message');
+            const divContent = document.getElementById('content-container');
+
+            if (!token) {
+                msgError.textContent = 'Link inválido. Nenhum token de acesso foi fornecido na URL.';
+                divError.style.display = 'block';
+                return;
+            }
+
+            divLoading.style.display = 'block';
+
+            try {
+                const response = await fetch(`${API_URL}${token}/`);
+                
+                if (response.status === 404) {
+                    throw new Error('Histórico não encontrado. O link pode estar incorreto ou o acesso foi revogado.');
+                }
+                if (!response.ok) {
+                    throw new Error('Falha de comunicação com o servidor.');
+                }
+
+                const dados = await response.json();
+                
+                // Preenche Cabeçalho
+                document.getElementById('bolsista-nome').textContent = dados.bolsista.nome;
+                document.getElementById('bolsista-pendencia').textContent = dados.bolsista.pendencia_display;
+
+                // Preenche Tabela
+                const tbody = document.getElementById('tabela-corpo');
+                tbody.innerHTML = '';
+
+                if (dados.sessoes.length === 0) {
+                    tbody.innerHTML = '<tr><td colspan="5" class="text-center text-muted py-3">Nenhum registro encontrado.</td></tr>';
+                } else {
+                    dados.sessoes.forEach(sessao => {
+                        const tr = document.createElement('tr');
+                        
+                        // Badge
+                        const tdTipo = document.createElement('td');
+                        if (sessao.tipo === 'pendencia') {
+                            tdTipo.innerHTML = '<span class="badge badge-pendencia">Pagamento de Pendência</span>';
+                        } else {
+                            tdTipo.innerHTML = '<span class="badge badge-normal">Normal</span>';
+                        }
+
+                        // Colunas
+                        const tdEntrada = document.createElement('td');
+                        tdEntrada.textContent = formatarDataHora(sessao.entrada);
+
+                        const tdSaida = document.createElement('td');
+                        tdSaida.textContent = formatarDataHora(sessao.saida);
+
+                        const tdTrabalhado = document.createElement('td');
+                        tdTrabalhado.textContent = sessao.trabalhado_display || '—';
+
+                        const tdDiferenca = document.createElement('td');
+                        tdDiferenca.textContent = sessao.diferenca_display || '—';
+
+                        tr.appendChild(tdTipo);
+                        tr.appendChild(tdEntrada);
+                        tr.appendChild(tdSaida);
+                        tr.appendChild(tdTrabalhado);
+                        tr.appendChild(tdDiferenca);
+
+                        tbody.appendChild(tr);
+                    });
+                }
+
+                divLoading.style.display = 'none';
+                divContent.style.display = 'block';
+
+            } catch (error) {
+                divLoading.style.display = 'none';
+                msgError.textContent = error.message;
+                divError.style.display = 'block';
+            }
+        }
+
+        // Inicia a busca assim que a página carrega
+        window.addEventListener('DOMContentLoaded', carregarHistorico);
+    </script>
+</body>
+</html>
