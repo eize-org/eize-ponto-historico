@@ -6,6 +6,13 @@
   "sessoes": [
     {
       "tipo": "normal",
+      "entrada": "2026-09-09T20:48:39.456526+00:00",
+      "saida": null,
+      "trabalhado_display": null,
+      "diferenca_display": null
+    },
+    {
+      "tipo": "normal",
       "entrada": "2026-09-08T20:43:08.897692+00:00",
       "saida": "2026-09-09T00:47:59.827477+00:00",
       "trabalhado_display": "04:04h",
