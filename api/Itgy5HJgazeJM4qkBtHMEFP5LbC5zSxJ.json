@@ -6,85 +6,57 @@
   "sessoes": [
     {
       "tipo": "normal",
-      "entrada": "2026-08-10T12:20:19.084063+00:00",
-      "saida": "2026-08-10T14:21:27.707138+00:00",
-      "trabalhado_display": "02:01h",
-      "diferenca_display": "00:00h"
+      "entrada": "2026-09-08T17:12:12.838294+00:00",
+      "saida": "2026-09-08T21:22:28.361114+00:00",
+      "trabalhado_display": "04:10h",
+      "diferenca_display": "00:10h"
     },
     {
       "tipo": "normal",
-      "entrada": "2026-08-11T17:22:00.190064+00:00",
-      "saida": "2026-08-11T21:21:42.538858+00:00",
-      "trabalhado_display": "03:59h",
-      "diferenca_display": "-00:01h"
+      "entrada": "2026-09-04T17:00:30.722659+00:00",
+      "saida": "2026-09-04T21:21:48.016519+00:00",
+      "trabalhado_display": "04:21h",
+      "diferenca_display": "00:21h"
     },
     {
       "tipo": "normal",
-      "entrada": "2026-08-12T20:43:12.830629+00:00",
-      "saida": "2026-08-13T00:50:16.536206+00:00",
-      "trabalhado_display": "04:07h",
-      "diferenca_display": "00:07h"
-    },
-    {
-      "tipo": "normal",
-      "entrada": "2026-08-13T17:14:42.118281+00:00",
-      "saida": "2026-08-13T21:21:41.895180+00:00",
-      "trabalhado_display": "04:06h",
-      "diferenca_display": "00:06h"
-    },
-    {
-      "tipo": "normal",
-      "entrada": "2026-08-14T17:20:29.698770+00:00",
-      "saida": "2026-08-14T21:21:05.324770+00:00",
-      "trabalhado_display": "04:00h",
-      "diferenca_display": "00:00h"
-    },
-    {
-      "tipo": "normal",
-      "entrada": "2026-08-17T10:27:09.883415+00:00",
-      "saida": "2026-08-17T14:22:22.326057+00:00",
-      "trabalhado_display": "03:55h",
-      "diferenca_display": "-00:05h"
-    },
-    {
-      "tipo": "normal",
-      "entrada": "2026-08-18T17:14:15.961817+00:00",
-      "saida": "2026-08-18T21:23:48.399300+00:00",
-      "trabalhado_display": "04:09h",
-      "diferenca_display": "00:09h"
-    },
-    {
-      "tipo": "normal",
-      "entrada": "2026-08-19T20:33:26.607259+00:00",
-      "saida": "2026-08-20T00:49:07.400763+00:00",
-      "trabalhado_display": "04:15h",
-      "diferenca_display": "00:15h"
-    },
-    {
-      "tipo": "normal",
-      "entrada": "2026-08-20T17:15:08.192613+00:00",
-      "saida": "2026-08-20T21:20:25.505298+00:00",
+      "entrada": "2026-09-03T17:16:08.047742+00:00",
+      "saida": "2026-09-03T21:21:28.034982+00:00",
       "trabalhado_display": "04:05h",
       "diferenca_display": "00:05h"
     },
     {
       "tipo": "normal",
-      "entrada": "2026-08-21T17:13:18.618219+00:00",
-      "saida": "2026-08-21T21:23:10.824296+00:00",
-      "trabalhado_display": "04:09h",
-      "diferenca_display": "00:09h"
+      "entrada": "2026-09-02T20:47:55.031479+00:00",
+      "saida": "2026-09-03T00:47:32.396934+00:00",
+      "trabalhado_display": "03:59h",
+      "diferenca_display": "-00:01h"
     },
     {
       "tipo": "normal",
-      "entrada": "2026-08-24T10:29:19.304136+00:00",
-      "saida": "2026-08-24T14:23:59.679250+00:00",
-      "trabalhado_display": "03:54h",
-      "diferenca_display": "-00:06h"
+      "entrada": "2026-09-01T17:13:28.348264+00:00",
+      "saida": "2026-09-01T21:21:16.869840+00:00",
+      "trabalhado_display": "04:07h",
+      "diferenca_display": "00:07h"
     },
     {
       "tipo": "normal",
-      "entrada": "2026-08-25T17:14:35.718234+00:00",
-      "saida": "2026-08-25T21:21:11.643536+00:00",
+      "entrada": "2026-08-31T10:38:38.052465+00:00",
+      "saida": "2026-08-31T14:34:43.535445+00:00",
+      "trabalhado_display": "03:56h",
+      "diferenca_display": "-00:04h"
+    },
+    {
+      "tipo": "normal",
+      "entrada": "2026-08-28T17:02:51.285869+00:00",
+      "saida": "2026-08-28T21:20:20.243544+00:00",
+      "trabalhado_display": "04:17h",
+      "diferenca_display": "00:17h"
+    },
+    {
+      "tipo": "normal",
+      "entrada": "2026-08-27T17:13:50.160556+00:00",
+      "saida": "2026-08-27T21:20:22.809919+00:00",
       "trabalhado_display": "04:06h",
       "diferenca_display": "00:06h"
     },
@@ -97,59 +69,87 @@
     },
     {
       "tipo": "normal",
-      "entrada": "2026-08-27T17:13:50.160556+00:00",
-      "saida": "2026-08-27T21:20:22.809919+00:00",
+      "entrada": "2026-08-25T17:14:35.718234+00:00",
+      "saida": "2026-08-25T21:21:11.643536+00:00",
       "trabalhado_display": "04:06h",
       "diferenca_display": "00:06h"
     },
     {
       "tipo": "normal",
-      "entrada": "2026-08-28T17:02:51.285869+00:00",
-      "saida": "2026-08-28T21:20:20.243544+00:00",
-      "trabalhado_display": "04:17h",
-      "diferenca_display": "00:17h"
+      "entrada": "2026-08-24T10:29:19.304136+00:00",
+      "saida": "2026-08-24T14:23:59.679250+00:00",
+      "trabalhado_display": "03:54h",
+      "diferenca_display": "-00:06h"
     },
     {
       "tipo": "normal",
-      "entrada": "2026-08-31T10:38:38.052465+00:00",
-      "saida": "2026-08-31T14:34:43.535445+00:00",
-      "trabalhado_display": "03:56h",
-      "diferenca_display": "-00:04h"
+      "entrada": "2026-08-21T17:13:18.618219+00:00",
+      "saida": "2026-08-21T21:23:10.824296+00:00",
+      "trabalhado_display": "04:09h",
+      "diferenca_display": "00:09h"
     },
     {
       "tipo": "normal",
-      "entrada": "2026-09-01T17:13:28.348264+00:00",
-      "saida": "2026-09-01T21:21:16.869840+00:00",
-      "trabalhado_display": "04:07h",
-      "diferenca_display": "00:07h"
-    },
-    {
-      "tipo": "normal",
-      "entrada": "2026-09-02T20:47:55.031479+00:00",
-      "saida": "2026-09-03T00:47:32.396934+00:00",
-      "trabalhado_display": "03:59h",
-      "diferenca_display": "-00:01h"
-    },
-    {
-      "tipo": "normal",
-      "entrada": "2026-09-03T17:16:08.047742+00:00",
-      "saida": "2026-09-03T21:21:28.034982+00:00",
+      "entrada": "2026-08-20T17:15:08.192613+00:00",
+      "saida": "2026-08-20T21:20:25.505298+00:00",
       "trabalhado_display": "04:05h",
       "diferenca_display": "00:05h"
     },
     {
       "tipo": "normal",
-      "entrada": "2026-09-04T17:00:30.722659+00:00",
-      "saida": "2026-09-04T21:21:48.016519+00:00",
-      "trabalhado_display": "04:21h",
-      "diferenca_display": "00:21h"
+      "entrada": "2026-08-19T20:33:26.607259+00:00",
+      "saida": "2026-08-20T00:49:07.400763+00:00",
+      "trabalhado_display": "04:15h",
+      "diferenca_display": "00:15h"
     },
     {
       "tipo": "normal",
-      "entrada": "2026-09-08T17:12:12.838294+00:00",
-      "saida": "2026-09-08T21:22:28.361114+00:00",
-      "trabalhado_display": "04:10h",
-      "diferenca_display": "00:10h"
+      "entrada": "2026-08-18T17:14:15.961817+00:00",
+      "saida": "2026-08-18T21:23:48.399300+00:00",
+      "trabalhado_display": "04:09h",
+      "diferenca_display": "00:09h"
+    },
+    {
+      "tipo": "normal",
+      "entrada": "2026-08-17T10:27:09.883415+00:00",
+      "saida": "2026-08-17T14:22:22.326057+00:00",
+      "trabalhado_display": "03:55h",
+      "diferenca_display": "-00:05h"
+    },
+    {
+      "tipo": "normal",
+      "entrada": "2026-08-14T17:20:29.698770+00:00",
+      "saida": "2026-08-14T21:21:05.324770+00:00",
+      "trabalhado_display": "04:00h",
+      "diferenca_display": "00:00h"
+    },
+    {
+      "tipo": "normal",
+      "entrada": "2026-08-13T17:14:42.118281+00:00",
+      "saida": "2026-08-13T21:21:41.895180+00:00",
+      "trabalhado_display": "04:06h",
+      "diferenca_display": "00:06h"
+    },
+    {
+      "tipo": "normal",
+      "entrada": "2026-08-12T20:43:12.830629+00:00",
+      "saida": "2026-08-13T00:50:16.536206+00:00",
+      "trabalhado_display": "04:07h",
+      "diferenca_display": "00:07h"
+    },
+    {
+      "tipo": "normal",
+      "entrada": "2026-08-11T17:22:00.190064+00:00",
+      "saida": "2026-08-11T21:21:42.538858+00:00",
+      "trabalhado_display": "03:59h",
+      "diferenca_display": "-00:01h"
+    },
+    {
+      "tipo": "normal",
+      "entrada": "2026-08-10T12:20:19.084063+00:00",
+      "saida": "2026-08-10T14:21:27.707138+00:00",
+      "trabalhado_display": "02:01h",
+      "diferenca_display": "00:00h"
     }
   ]
 }
