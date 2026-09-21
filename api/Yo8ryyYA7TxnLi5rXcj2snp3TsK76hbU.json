@@ -20,10 +20,10 @@
     },
     {
       "tipo": "normal",
-      "entrada": "2026-09-16T17:30:03.668290+00:00",
-      "saida": "2026-09-17T20:57:28.944199+00:00",
+      "entrada": "2026-09-16T17:30:03+00:00",
+      "saida": "2026-09-17T20:57:28+00:00",
       "trabalhado_display": "27:27h",
-      "diferenca_display": "23:27h"
+      "diferenca_display": "00:00h"
     },
     {
       "tipo": "normal",
