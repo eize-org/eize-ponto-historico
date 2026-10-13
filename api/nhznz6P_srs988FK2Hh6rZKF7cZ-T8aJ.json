@@ -1,14 +1,14 @@
 {
   "bolsista": {
     "nome": "Ingrid",
-    "pendencia_display": "00:00h"
+    "pendencia_display": "03:00h"
   },
   "sessoes": [
     {
       "tipo": "pendencia",
       "entrada": "2026-10-13T18:02:17.753227+00:00",
-      "saida": null,
-      "trabalhado_display": null,
+      "saida": "2026-10-13T18:59:07.029346+00:00",
+      "trabalhado_display": "00:56h",
       "diferenca_display": "—"
     },
     {
