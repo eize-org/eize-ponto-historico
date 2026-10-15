@@ -5,11 +5,18 @@
   },
   "sessoes": [
     {
-      "tipo": "normal",
-      "entrada": "2026-10-15T10:00:24.360553+00:00",
+      "tipo": "pendencia",
+      "entrada": "2026-10-15T14:02:25.752349+00:00",
       "saida": null,
       "trabalhado_display": null,
-      "diferenca_display": null
+      "diferenca_display": "—"
+    },
+    {
+      "tipo": "normal",
+      "entrada": "2026-10-15T10:00:24.360553+00:00",
+      "saida": "2026-10-15T14:02:12.229180+00:00",
+      "trabalhado_display": "04:01h",
+      "diferenca_display": "00:01h"
     },
     {
       "tipo": "normal",
