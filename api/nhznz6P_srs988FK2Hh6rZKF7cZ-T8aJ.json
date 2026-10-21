@@ -7,9 +7,9 @@
     {
       "tipo": "normal",
       "entrada": "2026-10-21T13:44:33.679013+00:00",
-      "saida": null,
-      "trabalhado_display": null,
-      "diferenca_display": null
+      "saida": "2026-10-21T18:00:42.774454+00:00",
+      "trabalhado_display": "04:16h",
+      "diferenca_display": "00:16h"
     },
     {
       "tipo": "normal",
