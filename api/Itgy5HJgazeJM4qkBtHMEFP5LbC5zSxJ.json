@@ -13,10 +13,10 @@
     },
     {
       "tipo": "normal",
-      "entrada": "2026-10-19T11:11:58.428480+00:00",
-      "saida": "2026-10-19T14:23:09.155619+00:00",
-      "trabalhado_display": "03:11h",
-      "diferenca_display": "-00:49h"
+      "entrada": "2026-10-19T10:11:58+00:00",
+      "saida": "2026-10-19T14:23:09+00:00",
+      "trabalhado_display": "04:11h",
+      "diferenca_display": "00:00h"
     },
     {
       "tipo": "normal",
