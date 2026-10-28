@@ -1,15 +1,15 @@
 {
   "bolsista": {
     "nome": "Lucas",
-    "pendencia_display": "02:27h"
+    "pendencia_display": "01:54h"
   },
   "sessoes": [
     {
       "tipo": "normal",
       "entrada": "2026-10-28T17:25:06.909924+00:00",
-      "saida": null,
-      "trabalhado_display": null,
-      "diferenca_display": null
+      "saida": "2026-10-28T21:58:31.145059+00:00",
+      "trabalhado_display": "04:33h",
+      "diferenca_display": "00:33h"
     },
     {
       "tipo": "normal",
