@@ -1,14 +1,14 @@
 {
   "bolsista": {
     "nome": "Gean",
-    "pendencia_display": "04:20h"
+    "pendencia_display": "01:43h"
   },
   "sessoes": [
     {
       "tipo": "pendencia",
       "entrada": "2026-10-29T18:06:33.051245+00:00",
-      "saida": null,
-      "trabalhado_display": null,
+      "saida": "2026-10-29T20:43:35.913424+00:00",
+      "trabalhado_display": "02:37h",
       "diferenca_display": "—"
     },
     {
